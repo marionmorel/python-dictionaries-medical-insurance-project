@@ -23,3 +23,18 @@ for cost in medical_costs.values():
 # Task 7
 average_cost = total_cost / len(medical_costs)
 print("Average Insurance Cost: " + str(average_cost))
+
+# Task 8
+names = ["Marina", "Vinay", "Connie", "Isaac", "Valentina"]
+ages = [27, 24, 43, 35, 52]
+
+# Task 9
+zipped_ages = zip(names, ages)
+
+# Task 10
+names_to_ages = {key:value for key, value in zipped_ages}
+print(names_to_ages)
+
+# Task 11
+marina_age = names_to_ages.get("Marina", None)
+print("Marina's age is " + str(marina_age))
