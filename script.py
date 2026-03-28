@@ -63,3 +63,11 @@ medical_records.pop("Vinay")
 # Task 18
 for name, record in medical_records.items():
     print(name + " is a " + str(record["Age"]) + " year old " + record["Sex"] + " " + record["Smoker"] + " with a BMI of " + str(record["BMI"]) + " and insurance cost of " + str(record["Insurance_cost"]))
+
+# Task 19
+def update_medical_records(name, record): 
+    medical_records.update({name: record})
+
+update_medical_records("Marion", {"Age": 28, "Sex": "Female", "BMI": 23.4, "Children": 0, "Smoker": "Smoker", "Insurance_cost": 10250.0})
+
+print(medical_records)
